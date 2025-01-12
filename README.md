@@ -40,3 +40,91 @@ Currently, two official plugins are available:
  # module : yêu cầu tên file phải chấm thêm module.css
 
 # props : giúp ta tái sử dụng lại giá trị UI
+# Destructuring :
+- const sv = {
+    name: "abc",
+    age: 20,    }
+ // const name = sv.name;
+  const {name} = sv;  
+
+   //const age = sv.age;
+  const {age} = sv;  
+
+#props : giúp ta chuyển dữ liệu từ component cha xuống component con  
+
+# prinitive type:
+
+- string, number, boolean, null, undefined...
+- dc luu o vung nho stack cua thanh Ram
+
+# object type
+
+- array, object, (function thuoc object)
+- dc luu o vung nho heap cua thanh Ram
+
+# stack 
+- dung de luu tru nhung du lieu co dinh
+# heap
+- dung le luu tru nhung du lieu ko co dinh
+
+# copy array
+khi thay doi mang moi thi mang cu khong bi anh huong
+
+- slice
+- map
+- spread operator: 
+# set state
+
+- neu nhu cap nhat gia tri moi bang gia tri truoc do thi react se khong re-render giao dien
+- muon react re-render thi phai cap nhat gia tri moi khac gia tri truoc do
+- chu y : dac biet doi voi Array,object.
+
+# copy object
+- Object.assign({}, <truyen doi tuong copy toan bo thuoc tinh cua doi tuong do>)
+- vd : 
+  - let sv1 = {name:'sv1', toan: 10, ly: 10};
+  - let sv2 = Object.assign({}, sv1);
+  - sv2 !== sv1 //true
+- spread operator: 
+# npm i react-router@latest
+
+# useRef
+- Giúp lấy 1 element trong React
+- Trả về 1 object : {current<giá trị>}
+
+# component
+- khi code component thì chú ý không xét cứng kích thước width, height của component đó
+- kích thước width , height : để nơi mình sử dụng muốn xét bao nhiêu thì xét
+
+# useNavigate
+- dùng để di chuyển giữa các page mà ko cần sử dụng link hoặc navlink
+
+# Life-cycle
+- mouting: trang web lần đầu xuất hiện trên giao diện
+- updating: trang web có cập nhật về state, props.
+- unmouting: trang web bị xóa khỏi giao diện
+
+# useEffect"
+- giúp chúng ta can thiệp vào trong từ vòng đời của component
+- luôn chạy lần đầu 
+- dependencies: khi có 1 trong những giá trị truyền vào mảng dependencies thay đổi thì callback của useEffect sẽ đc gọi
+- không truyền dependencies thì sẽ chạy mỗi lần re-render.(không có tham số thứ 2 của useEffect)
+- thứ tự chạy :UI -> useEffect::callback. luôn luôn đợi giao diện render lên xong mới gọi vào callback của useEffect  
+
+# query string
+- bổ sung thêm thông tin, mang thông tin từ trang này sang trang khác
+
+# Object.values
+- chuyen object ve array chua cac gia tri cua property
+
+# Object.keys
+- chuyen object ve array chua cac ten cua property
+
+# Object.entries
+- chuyen Object ve array moi phan tu
+
+# props: 
+- khi truyen gia tri tu component cha xuong component con
+
+# useEffect 
+- can thiệp vào vòng đời của unmouting 

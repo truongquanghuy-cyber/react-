@@ -3,7 +3,7 @@
 import { useState } from "react"
 
 export function ThayDoiMauXe() {
-    const [src, setSrc] = useState("/products/black-car.jpg" )
+    const [src, setSrc] = useState("/products/red-car.jpg" )
 
     return (
         <>

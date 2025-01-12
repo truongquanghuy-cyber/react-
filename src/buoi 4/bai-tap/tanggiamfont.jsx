@@ -14,7 +14,7 @@ export function TangGiamFront () {
         }}
         >-</button>
 
-        <p style={{fontSize:fontSize}}>Lorem ipsum dolor sit amet.</p>
+        <p style={{fontSize:fontSize}}>Lorem iqpsum dolor sit amet.</p>
         </>
     )
 }
